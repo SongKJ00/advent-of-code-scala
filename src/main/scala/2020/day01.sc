@@ -1,4 +1,4 @@
-val expenses = scala.io.Source.fromResource(s"2020/day1.txt").getLines().toList.map(_.toInt).zipWithIndex
+val expenses = scala.io.Source.fromResource(s"2020/day01.txt").getLines().toList.map(_.toInt).zipWithIndex
 
 val part1Answer = (for {
   (a, i) <- expenses
