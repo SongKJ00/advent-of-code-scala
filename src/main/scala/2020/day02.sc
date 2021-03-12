@@ -71,7 +71,7 @@ def parsePassword(parse: (Policy, String) => Option[Password], policyAndPassword
   val policy = parsePolicy(rawPolicy)
 
   policy match {
-    case Some(x) => parse(policy.get, rawPassword)
+    case Some(x) => parse(x, rawPassword)
     case None => None
   }
 }
