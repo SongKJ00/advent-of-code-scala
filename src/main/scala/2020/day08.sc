@@ -1,7 +1,5 @@
 val input = scala.io.Source.fromResource(s"2020/day08.txt").getLines().toList
 
-val visited = List.fill(input.length)(false)
-
 case class Operation(op: String)
 case class Argument(arg: Int)
 case class Instruction(op: Operation, arg: Argument)
